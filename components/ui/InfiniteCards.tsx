@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -20,13 +20,18 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
+  const isPointerDownRef = useRef(false);
+  const pointerIdRef = useRef<number | null>(null);
+  const dragStartXRef = useRef(0);
+  const scrollStartRef = useRef(0);
 
   useEffect(() => {
     addAnimation();
   }, []);
   const [start, setStart] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -69,12 +74,42 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+    isPointerDownRef.current = true;
+    pointerIdRef.current = event.pointerId;
+    dragStartXRef.current = event.clientX;
+    scrollStartRef.current = containerRef.current.scrollLeft;
+    containerRef.current.setPointerCapture?.(event.pointerId);
+    setIsDragging(true);
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!isPointerDownRef.current || !containerRef.current) return;
+    const deltaX = event.clientX - dragStartXRef.current;
+    containerRef.current.scrollLeft = scrollStartRef.current - deltaX;
+  };
+
+  const endDrag = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!isPointerDownRef.current) return;
+    isPointerDownRef.current = false;
+    setIsDragging(false);
+    if (pointerIdRef.current !== null) {
+      containerRef.current?.releasePointerCapture?.(pointerIdRef.current);
+    }
+    pointerIdRef.current = null;
+  };
+
   return (
     <div
       ref={containerRef}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={endDrag}
+      onPointerLeave={endDrag}
       className={cn(
         // max-w-7xl to w-screen
-        "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-screen cursor-grab overflow-x-scroll touch-pan-y select-none active:cursor-grabbing  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -83,7 +118,7 @@ export const InfiniteMovingCards = ({
         className={cn(
           // change gap-16
           " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          start && !isDragging && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >

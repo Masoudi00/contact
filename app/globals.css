@@ -82,4 +82,12 @@
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
+
+.scroller {
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
 }
