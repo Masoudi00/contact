@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <p className="md:text-base text-sm md:font-normal font-light text-center md:text-left">
-          Copyright © 2025 Mohamed Elmasoudi
+          Copyright © 2025 Mev Builds
         </p>
 
         <div className="flex items-center md:gap-3 gap-6 justify-center">
