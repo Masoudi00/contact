@@ -5,70 +5,6 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently learning ai automatiziation",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
-
 export const projects = [
   {
     id: 1,
@@ -78,80 +14,77 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
     link: "https://apple-website-one-swart.vercel.app/",
   },
-  
-  
+
   {
     id: 2,
     title: "3D Chair Customization App...",
     des: "Rendering And Manipulationg 3D Models is a great skill that i bring into my projects.",
     img: "/chair-con.png",
-    iconLists: ["/re.svg", "/tail.svg",  "/three.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
+    link: "https://chair-configurator-beryl.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "MEGA HEALTH Shopify Store...",
+    des: "A fully built Shopify store developed from scratch, including full theme customization, custom front-end enhancements, app integrations, and complete Amazon FBA order-fulfillment setup.",
+    img: "/megah.png",
+    iconLists: ["/shopify.svg", "/javascript.svg"],
+    link: "https://www.yourmegahealth.com/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The recreated Apple iPhone 15 Pro experience that Mohamed shipped for us feels like it came straight out of Cupertino. The GSAP and Three.js work is buttery smooth and has become the centerpiece of our product launch.",
+    name: "Evelyn Park",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Our custom 3D chair configurator was just an idea on paper. Mohamed turned it into a performant React + Three.js app that our sales reps now rely on daily to close deals with interior designers.",
+    name: "Mateo Rueda",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "We needed a Shopify store that could keep pace with our Amazon FBA pipeline. Mohamed owned the entire Mega Health build—from theme work to app integrations—and we launched without a single fulfillment hiccup.",
+    name: "El Maimouni Mohamed",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "What stood out most was the calm, iterative way Mohamed handled feedback. Every review cycle ended with tangible improvements, and the final site now converts 22% better than our previous build.",
+    name: "Ravi Patel",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Shopify",
+    img: "/shopify.svg",
+    nameImg: "/shopifyName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "Javascript",
+    img: "/javascript.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    name: "Three.js",
+    img: "/three.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "React JS",
+    img: "/re.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
+    name: "GSAP",
+    img: "/gsap.svg",
     nameImg: "/dockerName.svg",
   },
 ];
@@ -159,19 +92,18 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "TE-Connectivity internship",
-    desc: "I was part of the dev team managing support messages.",
+    title: "We build your website",
+    desc: "Either tell us your vision or let us help you create it.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Clothing Website Dev - Mev Clothing",
-    desc: "Designed and developed a clothing store for a cloting company.",
+    title: "Website Maintenance",
+    desc: "Whatever you need, we'll handle it, from updating content to fixing bugs.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
- 
 ];
 
 export const socialMedia = [
@@ -183,11 +115,16 @@ export const socialMedia = [
   {
     id: 2,
     img: "/twit.svg",
-    ref: "https://x.com/medelwork10",
+    ref: "https://x.com/MohamedELM95714",
   },
   {
     id: 3,
     img: "/link.svg",
-    ref: "https://github.com/Masoudi00",
+    ref: "https://www.linkedin.com/in/mohamed-elmasoudi-a28530291/",
+  },
+  {
+    id: 4,
+    img: "/discord.svg",
+    ref: "https://discord.gg/tdWKtMdD2Z",
   },
 ];

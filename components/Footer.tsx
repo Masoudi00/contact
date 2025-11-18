@@ -1,4 +1,5 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
@@ -7,12 +8,17 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
+      <div className="w-full absolute left-0 -bottom-72 min-h-96 h-96">
+        <div className="relative w-full h-full">
+          <Image
+            src="/footer-grid.svg"
+            alt="grid"
+            fill
+            className="object-cover opacity-50"
+            sizes="100vw"
+            priority
+          />
+        </div>
       </div>
 
       <div className="flex flex-col items-center">
@@ -24,28 +30,40 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <div className="flex flex-col gap-4 md:flex-row">
+          <a href="mailto:mohamed.elmasoudi.dev@gmail.com">
+            <MagicButton
+              title="Email Mohamed"
+              icon={<FaEnvelope />}
+              position="left"
+            />
+          </a>
+          <a
+            href="https://wa.me/212777163865?text=Hi%2C%20I'm%20interested%20in%20your%20services!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MagicButton
+              title="Chat on WhatsApp"
+              icon={<FaWhatsapp />}
+              position="left"
+              gradientClassName="bg-[conic-gradient(from_90deg_at_50%_50%,#7CFF8B_0%,#1D5C3A_50%,#7CFF8B_100%)]"
+              innerClassName="bg-[#0c1f14] text-[#c2ffd9]"
+            />
+          </a>
+        </div>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
+      <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <p className="md:text-base text-sm md:font-normal font-light text-center md:text-left">
+          Copyright © 2025 Mohamed Elmasoudi
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 justify-center">
           {socialMedia.map((info) => (
-            <a href={info.ref}>
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
+            <a key={info.id} href={info.ref} target="_blank" rel="noreferrer">
+              <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
+                <Image src={info.img} alt="icons" width={20} height={20} />
+              </div>
             </a>
           ))}
         </div>
