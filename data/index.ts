@@ -25,11 +25,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "MEGA HEALTH Shopify Store...",
-    des: "A fully built Shopify store developed from scratch, including full theme customization, custom front-end enhancements, app integrations, and complete Amazon FBA order-fulfillment setup.",
-    img: "/megah.png",
+    title: "Online Medical Access ...",
+    des: "A fully built Shopify app that allows users to browse and book medical appointments online.",
+    img: "/medic.png",
     iconLists: ["/shopify.svg", "/javascript.svg"],
-    link: "https://www.yourmegahealth.com/",
+    link: "https://www.youtube.com/watch?v=EdJYn0iue9M",
   },
 ];
 

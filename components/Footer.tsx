@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4 md:flex-row">
           <a href="mailto:mohamed.elmasoudi.dev@gmail.com">
             <MagicButton
-              title="Email Mohamed"
+              title="Email US"
               icon={<FaEnvelope />}
               position="left"
             />

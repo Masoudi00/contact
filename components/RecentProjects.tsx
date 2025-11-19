@@ -12,6 +12,13 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
+      <p className="mt-6 text-center text-white-200 max-w-2xl mx-auto text-sm md:text-base">
+        A lot of our work lives behind NDA&apos;s—reach out via{" "}
+        <a href="#contact" className="text-purple underline-offset-4 underline">
+          contact
+        </a>{" "}
+        and we&apos;ll share a private sneak peek.
+      </p>
       <div className="grid gap-8 mt-10 p-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((item) => (
           <div
@@ -62,7 +69,7 @@ const RecentProjects = () => {
                 rel="noreferrer"
                 className="flex items-center text-purple font-semibold text-sm"
               >
-                Check Live Site
+                View Project
                 <FaLocationArrow className="ms-2" color="#CBACF9" />
               </a>
             </div>

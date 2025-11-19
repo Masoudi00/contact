@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row gap-4 w-full mt-4 items-center justify-center">
             <a className="w-full md:w-auto" href="mailto:mohamed.elmasoudi.dev@gmail.com">
               <MagicButton
-                title="Email Mohamed"
+                title="Email US"
                 icon={<FaEnvelope />}
                 position="left"
               />
