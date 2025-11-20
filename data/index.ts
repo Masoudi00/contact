@@ -155,4 +155,9 @@ export const socialMedia = [
     img: "/discord.svg",
     ref: "https://discord.gg/tdWKtMdD2Z",
   },
+  {
+    id: 5,
+    img: "/instagram.svg",
+    ref: "https://www.instagram.com/mevbuilds/",
+  },
 ];
