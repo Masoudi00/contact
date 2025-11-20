@@ -3,7 +3,18 @@
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { projects } from "@/data";
+// import { projects } from "@/data";
+// 
+// const categories = [
+//   {
+//     id: "build",
+//     title: "Product builds",
+//     blurb:
+//       "High-fidelity web experiences, 3D interactions, and launch-ready marketing sites.",
+// 
+//     items: projects
+//   },
+// ];
 
 const RecentProjects = () => {
   return (

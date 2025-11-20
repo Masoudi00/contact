@@ -33,6 +33,34 @@ export const projects = [
   },
 ];
 
+
+export const aiAutomationsProjects = [
+  {
+    id: 1,
+    title: "Shopify Automation ",
+    des: "Shopify Workflow Automation via Telegram Bot & AI (n8n)",
+    img: "/shopifyAutomation.png",
+    iconLists: ["/n8n.svg", "/shopify.svg"],
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Leads Generation Automation ",
+    des: "Automated lead generation for businesses using AI-powered bots and workflow automation.",
+    img: "/leadGeneration.png",
+    iconLists: ["/n8n.svg", "/Apify.svg"],
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Automated Social Media Clip Creation",
+    des: "Content generation automation using AI, streamlining the creation of written and multimedia content.",
+    img: "/contentGeneration.png",
+    iconLists: ["/n8n.svg", "klap.png" ],
+    link: "",
+  },
+];
+
 export const testimonials = [
   {
     quote:
