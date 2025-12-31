@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Mohamed, a Full Stack Developer based in Morocco.
+            Welcome to MEVBuilds — a full-stack development studio delivering modern, scalable web solutions.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 w-full mt-4 items-center justify-center">
