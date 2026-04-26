@@ -8,11 +8,11 @@ export const navItems = [
 export const projects = [
   {
     id: 1,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
-    link: "https://apple-website-one-swart.vercel.app/",
+    title: "Mega Health Shopify store",
+    des: "A fully customized Shopify store built for Mega Health, focused on clean product presentation, responsive design, and a smooth shopping experience.",
+    img: "/megahealth.png",
+    iconLists: ["/shopify.svg", "/javascript.svg"],
+    link: "https://www.yourmegahealth.com/",
   },
 
   {
@@ -20,7 +20,7 @@ export const projects = [
     title: "3D Chair Customization App...",
     des: "Rendering And Manipulationg 3D Models is a great skill that i bring into my projects.",
     img: "/chair-con.png",
-    iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
     link: "https://chair-configurator-beryl.vercel.app/",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     title: "Online Medical Access ...",
     des: "A fully built Shopify app that allows users to browse and book medical appointments online.",
     img: "/medic.png",
-    iconLists: ["/shopify.svg", "/javascript.svg"],
+    iconLists: ["/re.svg", "/tail.svg"],
     link: "https://www.youtube.com/watch?v=EdJYn0iue9M",
   },
 ];
@@ -64,13 +64,8 @@ export const aiAutomationsProjects = [
 export const testimonials = [
   {
     quote:
-      "The recreated Apple iPhone 15 Pro experience that Mohamed shipped for us feels like it came straight out of Cupertino. The GSAP and Three.js work is buttery smooth and has become the centerpiece of our product launch.",
-    name: "Evelyn Park",
-  },
-  {
-    quote:
-      "Our custom 3D chair configurator was just an idea on paper. Mohamed turned it into a performant React + Three.js app that our sales reps now rely on daily to close deals with interior designers.",
-    name: "Mateo Rueda",
+      "We needed automation for our workflow, and Mohamed delivered exactly that. The n8n system he set up saves us hours every day by handling repetitive tasks automatically.",
+    name: "Operations Manager",
   },
   {
     quote:
@@ -79,8 +74,8 @@ export const testimonials = [
   },
   {
     quote:
-      "What stood out most was the calm, iterative way Mohamed handled feedback. Every review cycle ended with tangible improvements, and the final site now converts 22% better than our previous build.",
-    name: "Ravi Patel",
+      "The 3D configurator Mohamed built is not just visually impressive—it actually helps customers interact with our product in a way that increases engagement and understanding.",
+    name: "Product Manager",
   },
 ];
 
