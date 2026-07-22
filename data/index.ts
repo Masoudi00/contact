@@ -73,17 +73,17 @@ export const aiAutomationsProjects = [
 export const testimonials = [
   {
     quote:
-      "We needed automation for our workflow, and Mohamed delivered exactly that. The n8n system he set up saves us hours every day by handling repetitive tasks automatically.",
+      "We needed automation for our workflow, and Mev Builds delivered exactly that. The n8n system he set up saves us hours every day by handling repetitive tasks automatically.",
     name: "Operations Manager",
   },
   {
     quote:
-      "We needed a Shopify store that could keep pace with our Amazon FBA pipeline. Mohamed owned the entire Mega Health build—from theme work to app integrations—and we launched without a single fulfillment hiccup.",
+      "We needed a Shopify store that could keep pace with our Amazon FBA pipeline. Mev Builds owned the entire Mega Health build—from theme work to app integrations—and we launched without a single fulfillment hiccup.",
     name: "El Maimouni Mohamed",
   },
   {
     quote:
-      "The 3D configurator Mohamed built is not just visually impressive—it actually helps customers interact with our product in a way that increases engagement and understanding.",
+      "The 3D configurator Mev Builds built is not just visually impressive—it actually helps customers interact with our product in a way that increases engagement and understanding.",
     name: "Product Manager",
   },
 ];
