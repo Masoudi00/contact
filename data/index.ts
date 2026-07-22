@@ -22,15 +22,24 @@ export const projects = [
     img: "/chair-con.png",
     iconLists: ["/re.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
     link: "https://chair-configurator-beryl.vercel.app/",
-  },
+  },  
   {
     id: 3,
+    title: "SBsupps Hydration supplements ...",
+    des: "A fully built Nextjs/shopify headless store for a supplement company.",
+    img: "/sbsupps.png",
+    iconLists: ["/nextt.svg", "/shopify.svg"],
+    link: "https://sbsupps.store",
+  },
+  {
+    id: 4,
     title: "Online Medical Access ...",
     des: "A fully built Shopify app that allows users to browse and book medical appointments online.",
     img: "/medic.png",
     iconLists: ["/re.svg", "/tail.svg"],
     link: "https://www.youtube.com/watch?v=EdJYn0iue9M",
   },
+
 ];
 
 
